@@ -17,45 +17,51 @@
             font-family: "Roboto", sans-serif;
             font-size: 20px;
         }
-        .header page__header {
+        .page__header {
             width: 100vw;
             height: 10vh;
             margin-top: 90px;
         }
         .header__logo {
             float: left;
+            margin-left: 76px;
         }
         .header__button {
+            float: right;
+            margin-right: 74px;
+        }
+        .button {
             display: inline-block;
             background-color: rgba(82, 34, 208, 1);
             width: 115px;
             height: 40px;
             border-radius: 30px;
+            font-size: 13px;
+            font-weight: bolder;
             color: white;
         }
-        .button__inner {
-            width: 10px;
-            height: 10px;
+        .button__cart {
+            width: 15px;
+            height: 15px;
         }
     </style>
 </head>
 <body class="page">
-    <header class="header page__header">
-        <div class="header__logo">
-            <a href="#">
-                <img class="logo logo__img" src="./assets/images/logo.svg" alt="">
-            </a>
+    <div class="page__header">
+        <div class="header">
+            <div class="header__logo">
+                <a href="#"><img class="logo__img" src="./assets/images/logo.svg"></a>
+            </div>
         </div>
-        <div class="header__button">
+            <div class="header__button">
             <button class="button">КОРЗИНА
-                <span class="button__inner">
-                    <span class="icon">
-                        <img src="/assets/images/ico.svg" alt="an image of a cart">
-                    </span>
-                </span>
-            </button>
+            <img class="button__cart" src="./assets/images/ico.svg"></button>
         </div>
-    </header>
-    <footer class="footer page__footer"></footer>
+    </div>
+    <div class="page__main-line">
+
+    </div>
+    <div class="page__footer"></div>
+    
 </body>
 </html>
