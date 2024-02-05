@@ -1,110 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <title>Figma Template</title>
     <style>
-        .page {
-            width: 100vw;
-            margin: 0;
-            background-color: rgba(229, 229, 229, 1);
-            font-family: "Roboto", sans-serif;
-            font-size: 20px;
-        }
-        .page__header {
-            width: 100vw;
-            height: 10vh;
-            margin-top: 90px;
-        }
-        .header__logo {
-            float: left;
-            margin-left: 76px;
-        }
-        .header__button {
-            float: right;
-            margin-right: 74px;
-        }
-        .button {
-            display: inline-block;
-            background-color: rgba(82, 34, 208, 1);
-            width: 115px;
-            height: 40px;
-            border-radius: 30px;
-            box-shadow: 0 0 10px rgba(82, 34, 208, 1);
-            font-size: 13px;
-            font-weight: bolder;
-            color: white;
-        }
-        .button__cart {
-            width: 15px;
-            height: 15px;
-        }
-        .page__main-section {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .main-section {
-            display: flex;
-            flex-direction: row;
-            width: 100vw;
-        }
-        .main-section__content {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 542px;
-            height: 216px;
-            margin-left: 126px;
-            margin-top: 76px;
-        }
-        .content__title {
-            font-size: 60px;
-            font-weight:900;
-        }
-        .content__lead {
-            font-size: 20px;
-            font-weight: lighter;
-        }
-        .pict__pict_l {
-            position:absolute;
-            height: 724px;
-            margin-left: 44px;
-            margin-bottom: 48px;
-        }
+            .page {
+              width: 100vw;
+              margin: 0;
+              background-color: rgba(229, 229, 229, 1);
+              font-family: "Roboto", sans-serif;
+              font-size: 20px;
+            }
+            .page__header {
+              width: 100vw;
+              height: 10vh;
+              margin-top: 90px;
+            }
+            .header__logo {
+              float: left;
+              margin-left: 76px;
+            }
+            .header__button {
+              float: right;
+              margin-right: 74px;
+            }
+            .button {
+              display: inline-block;
+              background-color: rgba(82, 34, 208, 1);
+              width: 115px;
+              height: 40px;
+              border-radius: 30px;
+              box-shadow: 0 0 10px rgba(82, 34, 208, 1);
+              font-size: 13px;
+              font-weight: bolder;
+              color: white;
+            }
+            .button__cart {
+              width: 15px;
+              height: 15px;
+            }
+            .page__main-section {
+              display: flex;
+              flex-direction: row;
+              justify-content: space-between;
+            }
+            .main-section {
+              display: flex;
+              flex-direction: row;
+              width: 100vw;
+            }
+            .main-section__content {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              width: 542px;
+              height: 216px;
+              margin-left: 126px;
+              margin-top: 76px;
+            }
+            .content__title {
+              font-size: 60px;
+              font-weight: 900;
+            }
+            .content__lead {
+              font-size: 20px;
+              font-weight: lighter;
+            }
+            .pict__pict_l {
+              position: absolute;
+              height: 724px;
+              margin-left: 44px;
+              margin-bottom: 48px;
+            }
+            .button__custom-btn {
+        width: 130px;
+        height: 40px;
+        color: #fff;
+        border-radius: 5px;
+        padding: 10px 25px;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+        background: transparent;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        position: relative;
+        display: inline-block;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+        outline: none;
+      }
+      .btn-2 {
+        background: rgb(96,9,240);
+        background: linear-gradient(0deg, rgba(96,9,240,1) 0%, rgba(129,5,240,1) 100%);
+        border: none;
+
+      }
+      .btn-2:before {
+        height: 0%;
+        width: 2px;
+      }
+      .btn-2:hover {
+        box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
+                    -4px -4px 6px 0 rgba(116, 125, 136, .5),
+          inset -4px -4px 6px 0 rgba(255,255,255,.2),
+          inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+      }
+
+            }
     </style>
-</head>
-<body class="page">
+  </head>
+  <body class="page">
     <div class="page__header">
-        <div class="header">
-            <div class="header__logo">
-                <a href="#"><img class="logo__img" src="./assets/images/logo.svg"></a>
-            </div>
+      <div class="header">
+        <div class="header__logo">
+          <a href="#"
+            ><img class="logo__img" src="./assets/images/logo.svg"
+          /></a>
         </div>
-            <div class="header__button">
-            <button class="button">КОРЗИНА
-            <img class="button__cart" src="./assets/images/ico.svg"></button>
-        </div>
+      </div>
+      <div class="header__button">
+        <button class="button">
+          КОРЗИНА <img class="button__cart" src="./assets/images/ico.svg" />
+        </button>
+      </div>
     </div>
     <div class="page__main-section">
-        <div class="main-section">
-            <div class="main-section__content">
-                <h1 class="content__title">ВИРТУАЛЬНАЯ РЕАЛЬНОСТЬ БЕЗ ПРОВОДОВ</h1>
-                <p class="content__lead">Лучше, что случалось с виртуальным миром в реальности. Новый компактный шлем без проводов и дорогих компьютеров.</p>
-            </div>
-            <div class="main-section__pict">
-                <img class="pict__pict_l" src="assets/images/pic.svg" alt="an image">
-            </div>
+      <div class="main-section">
+        <div class="main-section__content">
+          <h1 class="content__title">ВИРТУАЛЬНАЯ РЕАЛЬНОСТЬ БЕЗ ПРОВОДОВ</h1>
+          <p class="content__lead">
+            Лучше, что случалось с виртуальным миром в реальности. Новый
+            компактный шлем без проводов и дорогих компьютеров.
+          </p>
         </div>
-
+        <div class="main-section__pict">
+          <img
+            class="pict__pict_l"
+            src="assets/images/pic.svg"
+            alt="an image"
+          />
+        </div>
+        <div class="main-section__button">
+          <button class="button__custom-btn btn-2">Купить</button>
+        </div>
+      </div>
     </div>
     <div class="page__footer"></div>
-    
-</body>
+  </body>
 </html>
