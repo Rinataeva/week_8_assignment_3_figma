@@ -45,6 +45,39 @@
             width: 15px;
             height: 15px;
         }
+        .page__main-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .main-section {
+            display: flex;
+            flex-direction: row;
+            width: 100vw;
+        }
+        .main-section__content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 542px;
+            height: 216px;
+            margin-left: 126px;
+            margin-top: 76px;
+        }
+        .content__title {
+            font-size: 60px;
+            font-weight:900;
+        }
+        .content__lead {
+            font-size: 20px;
+            font-weight: lighter;
+        }
+        .pict__pict_l {
+            position:absolute;
+            height: 724px;
+            margin-left: 44px;
+            margin-bottom: 48px;
+        }
     </style>
 </head>
 <body class="page">
@@ -59,9 +92,15 @@
             <img class="button__cart" src="./assets/images/ico.svg"></button>
         </div>
     </div>
-    <div class="page__main">
-        <div class="main">
-            <div class="main__"></div>
+    <div class="page__main-section">
+        <div class="main-section">
+            <div class="main-section__content">
+                <h1 class="content__title">ВИРТУАЛЬНАЯ РЕАЛЬНОСТЬ БЕЗ ПРОВОДОВ</h1>
+                <p class="content__lead">Лучше, что случалось с виртуальным миром в реальности. Новый компактный шлем без проводов и дорогих компьютеров.</p>
+            </div>
+            <div class="main-section__pict">
+                <img class="pict__pict_l" src="assets/images/pic.svg" alt="an image">
+            </div>
         </div>
 
     </div>
